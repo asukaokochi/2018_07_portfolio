@@ -1,0 +1,182 @@
+html,
+body {
+    font-family: 'Quicksand', YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
+}
+
+/*共通*/
+
+.profile__h1,
+.skill__h1,
+.works__h1,
+.contact__h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+}
+
+/*ナビ*/
+
+nav {
+    position: fixed;
+    right: 5%;
+    top: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20%;
+}
+
+.nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #222;
+    margin: 0.5rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.nav__link:hover {
+    padding-right: 0.5rem;
+    border-right: 2px solid #222;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*ファーストビュー*/
+
+#firstview {
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.firstview__img--logo {
+    margin: 25vh auto 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.firstview__img--logo img {
+    width: 30%;
+    height: 30%;
+}
+
+.firstview__btn--next {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid;
+    border-color: transparent transparent #868686 #868686;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+.firstview__btn--next:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*プロフィール*/
+
+#profile {
+    height: 100vh;
+    padding: 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.profile__all--layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.profile__name--me {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.profile__img--me {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.profile__img--me img {
+    width: 30vw;
+}
+
+.profile__text--me {
+    width: 80%;
+    line-height: 2rem;
+}
+
+
+/*スキル*/
+
+#skill {
+    height: 100vh;
+    padding: 0 5%;
+}
+
+/*作品*/
+
+#works {
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.works__all--layout {
+    width: 100%;
+    padding: 0 3rem;
+}
+
+.works__h2 {
+    font-size: 1.5rem;
+}
+
+/*お問い合わせ*/
+
+#contact {
+    height: 100vh;
+    padding: 0 5%;
+}

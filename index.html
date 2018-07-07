@@ -1,13 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>I'm ASUKA.</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp.min.css">
-    <style>html,body { font-family: 'Quicksand', YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif; }</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    aiueoあ、い。う「え」お
+    <!--ナビ-->
+    <nav>
+        <a class="nav__link" href="#profile">PROFILE</a>
+        <a class="nav__link" href="#skill">SKILL</a>
+        <a class="nav__link" href="#works">WORKS</a>
+        <a class="nav__link" href="#contact">CONTACT</a>
+    </nav>
+    <!--ファーストビュー-->
+    <div id="firstview">
+        <div class="firstview__img--logo">
+            <img src="image/firstview_img.png" alt="OKOCHI ASUKA" />
+        </div>
+        <a href="#profile">
+            <div class="firstview__btn--next"></div>
+        </a>
+    </div>
+    <!--プロフィール-->
+    <div id="profile">
+        <div class="profile__img--me">
+            <img src="image/face.png" alt="(^o^)" />
+        </div>
+        <div class="profile__all--layout">
+            <div class="profile__h1">Profile</div>
+            <div class="profile__name--me">大河内　明日香</div>
+            <div class="profile__text--me">
+                デザイナーとして頑張っている学生。<br> 普段は主に、Webやアプリのデザインを行いながら、コーディングも出来るデザイナーになるために勉強をしています。
+                <br> これからの目標としては、「デザインの言語化」と「ユーザーニーズを意識したデザイン」が出来るデザイナーになりたいと考えています。
+            </div>
+        </div>
+    </div>
+    <!--スキル-->
+    <div id="skill">
+        <div class="skill__h1">Skill</div>
+        <div class="skill__graph--layout">
+            <div class="skill__graph"></div>
+            <div class="skill__graph--number"></div>
+            <div class="skill__name"></div>
+            <div class="skill__icon"></div>
+        </div>
+    </div>
+    <!--作品-->
+    <div id="works">
+        <div class="works__h1">Works</div>
+        <div class="works__all--layout">
+            <div class="works__h2">Web</div>
+            <div class="works__web--layout">
+                <div class="works__web"></div>
+            </div>
+        </div>
+        <div class="works__all--layout">
+            <div class="works__h2">Graphic</div>
+            <div class="works__graphic--layout">
+                <div class="works__graphic"></div>
+            </div>
+        </div>
+    </div>
+    <!--お問い合わせ-->
+    <div id="contact">
+        <div class="contact__h1">Contact</div>
+        <div class="contact__button--sns">
+            <a href="https://twitter.com/AsukaOkochi"></a>
+            <a href="https://www.facebook.com/asukaaaaaaaa"></a>
+            <a href="https://github.com/asukaokochi"></a>
+        </div>
+        <form netlify>
+            <label class="contact__label">Name</label>
+            <input class="contact__input" />
+            <label class="contact__label">Mail</label>
+            <input class="contact__input" />
+            <label class="contact__label">Message</label>
+            <textarea class="contact__input"></textarea>
+            <button class="contact__button--submit">Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
