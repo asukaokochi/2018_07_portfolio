@@ -7,13 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
     <!--ナビ-->
     <nav>
         <a class="nav__link" href="#profile">PROFILE</a>
-        <a class="nav__link" href="#skill">SKILL</a>
+        <!--        <a class="nav__link" href="#skill">SKILL</a>-->
         <a class="nav__link" href="#works">WORKS</a>
         <a class="nav__link" href="#contact">CONTACT</a>
     </nav>
@@ -22,9 +23,6 @@
         <div class="firstview__img--logo">
             <img src="image/firstview_img.png" alt="OKOCHI ASUKA" />
         </div>
-        <a href="#profile">
-            <div class="firstview__btn--next"></div>
-        </a>
     </div>
     <!--プロフィール-->
     <div id="profile">
@@ -41,15 +39,19 @@
         </div>
     </div>
     <!--スキル-->
+    <!-- 間に合わなさそうなので保留
     <div id="skill">
         <div class="skill__h1">Skill</div>
         <div class="skill__graph--layout">
-            <div class="skill__graph"></div>
-            <div class="skill__graph--number"></div>
-            <div class="skill__name"></div>
-            <div class="skill__icon"></div>
+            <div class="skill__graph">
+                <canvas id="mycanvas" height="450" width="600"></canvas>
+                <div class="skill__graph--number"></div>
+                <div class="skill__name"></div>
+                <div class="skill__icon"></div>
+            </div>
         </div>
     </div>
+-->
     <!--作品-->
     <div id="works">
         <div class="works__h1">Works</div>
@@ -70,20 +72,30 @@
     <div id="contact">
         <div class="contact__h1">Contact</div>
         <div class="contact__button--sns">
-            <a href="https://twitter.com/AsukaOkochi"></a>
-            <a href="https://www.facebook.com/asukaaaaaaaa"></a>
-            <a href="https://github.com/asukaokochi"></a>
+            <a href="https://twitter.com/AsukaOkochi"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/asukaaaaaaaa"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/asukaokochi"><i class="fab fa-github"></i></a>
         </div>
         <form netlify>
-            <label class="contact__label">Name</label>
-            <input class="contact__input" />
-            <label class="contact__label">Mail</label>
-            <input class="contact__input" />
-            <label class="contact__label">Message</label>
-            <textarea class="contact__input"></textarea>
+            <div class="contact__inputs">
+                <label class="contact__label">Name</label>
+                <input class="contact__input" name="name" />
+            </div>
+            <div class="contact__inputs">
+                <label class="contact__label">Mail</label>
+                <input class="contact__input" name="mail" />
+            </div>
+            <div class="contact__inputs">
+                <label class="contact__label">Message</label>
+                <textarea class="contact__input" name="message"></textarea>
+            </div>
             <button class="contact__button--submit">Submit</button>
         </form>
     </div>
+    <div id="footer">
+        <p>&copy; 2018 Okochi Asuka</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 </body>
 
 </html>
