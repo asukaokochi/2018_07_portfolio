@@ -16,6 +16,16 @@ body {
     width: 100%;
 }
 
+::-moz-selection {
+    background: #f9e5e1;
+    /* Firefox */
+}
+
+::selection {
+    background: #f9e5e1;
+    /* Safari */
+}
+
 /*ナビ*/
 
 nav {
