@@ -262,6 +262,10 @@ nav {
     visibility: visible;
 }
 
+.works__web--text {
+    width: 100%;
+}
+
 .works__web--text span {
     font-size: 1.5rem;
 }
