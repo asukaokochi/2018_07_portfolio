@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="shortcut icon" href="image/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -59,6 +60,25 @@
         <div class="works__all--layout">
             <div class="works__h2">Web</div>
             <div class="works__web--layout">
+                <div class="works__web">
+                    <div class="works__web--image" href="https://do-you-know-citypop.netlify.com/" target="_blank">
+                        <img class="works__web--image" src="image/work/web1.png" />
+                    </div>
+                    <div class="works__web--text">
+                        <span>Do you know Citypop?</span>
+                        <p>
+                            アルバイトの研修で作成しました。 テーマは自由だったので、自分の好きな「シティポップ」というジャンルの音楽を紹介するサイトを作成しました。<br>制作期間は約２週間です。
+                        </p>
+                        <div class="go__web">
+                            <a href="https://do-you-know-citypop.netlify.com/" target="_blank">作品を見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works__web--layout">
+                <div class="works__web"></div>
+            </div>
+            <div class="works__web--layout">
                 <div class="works__web"></div>
             </div>
         </div>
@@ -67,31 +87,48 @@
             <div class="works__graphic--layout">
                 <div class="works__graphic"></div>
             </div>
+            <div class="works__graphic--layout">
+                <div class="works__graphic"></div>
+            </div>
+            <div class="works__graphic--layout">
+                <div class="works__graphic"></div>
+            </div>
+        </div>
+        <div class="works__all--layout">
+            <div class="works__h2">Other</div>
+            <div class="works__other--layout">
+                <div class="works__other"></div>
+            </div>
         </div>
     </div>
     <!--お問い合わせ-->
     <div id="contact">
         <div class="contact__h1">Contact</div>
+        <p>
+            何かございましたら、お気軽にお問い合わせください。<br> １週間以内に返事が来ない場合は、メールアドレスが正しいかもう一度ご確認の上、
+            <br> 再送していただけるとありがたいです。
+        </p>
+        <form netlify>
+            <div class="contact__inputs">
+                <label class="contact__label">Name</label>
+                <input class="contact__input" name="name" required/>
+            </div>
+            <div class="contact__inputs">
+                <label class="contact__label">Mail</label>
+                <input class="contact__input" name="mail" required/>
+            </div>
+            <div class="contact__inputs">
+                <label class="contact__label--last">Message</label>
+                <textarea class="contact__input" name="message" required minlength="10"></textarea>
+            </div>
+            <button class="contact__button--submit">Submit</button>
+        </form>
+        <p>or</p>
         <div class="contact__button--sns">
             <a href="https://twitter.com/AsukaOkochi"><i class="fab fa-twitter"></i></a>
             <a href="https://www.facebook.com/asukaaaaaaaa"><i class="fab fa-facebook"></i></a>
             <a href="https://github.com/asukaokochi"><i class="fab fa-github"></i></a>
         </div>
-        <form netlify>
-            <div class="contact__inputs">
-                <label class="contact__label">Name</label>
-                <input class="contact__input" name="name" />
-            </div>
-            <div class="contact__inputs">
-                <label class="contact__label">Mail</label>
-                <input class="contact__input" name="mail" />
-            </div>
-            <div class="contact__inputs">
-                <label class="contact__label">Message</label>
-                <textarea class="contact__input" name="message"></textarea>
-            </div>
-            <button class="contact__button--submit">Submit</button>
-        </form>
     </div>
     <div id="footer">
         <p>&copy; 2018 Okochi Asuka</p>
