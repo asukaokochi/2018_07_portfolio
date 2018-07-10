@@ -164,7 +164,9 @@ nav {
 /*作品*/
 
 #works {
-    height: 100vh;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     padding: 10% 10% 5% 10%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -211,7 +213,9 @@ nav {
 }
 
 .works__web--image img {
-    width: 100%;
+    width: 25vw;
+    border: 1px solid #aaa;
+    padding: 0;
 }
 
 .go__web {
