@@ -442,6 +442,30 @@ textarea {
 /*モバイル対応*/
 
 @media(max-width:425px) {
+    /*
+    nav {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.25rem;
+        height: 4rem;
+    }
+    .nav__wrap--link {}
+    .nav__wrap--link::before {
+        margin-bottom: 0.75rem;
+    }
+    .nav__wrap--link::before,
+    .nav__wrap--link::after {
+        background-color: #666;
+        border-radius: 2.5px;
+        content: "";
+        display: block;
+        height: 2.5px;
+        width: 2rem;
+    }
+    .nav__link {
+        display: none;
+    }
+*/
     .contact__button--sns {
         width: 100%;
     }
