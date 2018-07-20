@@ -347,10 +347,22 @@ form {
     transition: 0.5s;
 }
 
-.contact__button--sns i:hover {
+.contact__button--sns .fa-twitter:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: #f28d8d;
+    color: #4AA1EB;
+}
+
+.contact__button--sns .fa-facebook:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #3b5998;
+}
+
+.contact__button--sns .fa-github:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #25292E;
 }
 
 .contact__label {
