@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: 'Quicksand', YakuHanJP, "Hiragino Sans", Meiryo, "Yu Gothic Medium", sans-serif;
+    font-family: 'Quicksand', YakuHanJP, "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
     color: #222;
     background-color: #fefefe;
 }
@@ -450,6 +450,8 @@ textarea {
     padding: 0 0 0.25rem;
     text-align: center;
 }
+
+/*プライバシーポリシー*/
 
 /*モバイル対応*/
 
