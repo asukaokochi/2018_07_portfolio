@@ -15,6 +15,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-122093800-1');
+
     </script>
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -25,11 +26,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="#top">
     <!--ナビ-->
     <nav>
         <a class="nav__wrap--link">
-            <a class="nav__link" href="#profile">PROFILE</a>
+            <a class="nav__link" href="#top">TOP</a>
+        <a class="nav__link" href="#profile">PROFILE</a>
         <!--        <a class="nav__link" href="#skill">SKILL</a>-->
         <a class="nav__link" href="#works">WORKS</a>
         <a class="nav__link" href="#contact">CONTACT</a>
@@ -245,7 +247,13 @@
         </div>
     </div>
     <div id="footer">
-        <a href="#" target="_blank">プライバシーポリシー</a>
+        <div class="footer__site--all">
+            <a href="#top">TOP</a>
+            <a href="#profile">PROFILE</a>
+            <a href="#works">WORKS</a>
+            <a href="#contact">CONTACT</a>
+            <a href="privacy.html" target="_blank">PRIVACY_POLICY</a>
+        </div>
         <p>&copy; 2018 Okochi Asuka</p>
     </div>
     <script type="text/javascript" src="script.js"></script>
