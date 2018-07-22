@@ -1,11 +1,11 @@
+/*共通*/
+
 html,
 body {
     font-family: 'Quicksand', YakuHanJP, "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, "Yu Gothic Medium", sans-serif;
     color: #222;
     background-color: #fefefe;
 }
-
-/*共通*/
 
 .profile__h1,
 .skill__h1,
@@ -24,6 +24,19 @@ body {
 ::selection {
     background: #f9e5e1;
     /* Safari */
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+a:hover {
+    color: #f28d8d;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
 }
 
 /*ナビ*/
@@ -449,6 +462,23 @@ textarea {
 #footer {
     padding: 0 0 0.25rem;
     text-align: center;
+}
+
+.footer__site--all {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__site--all a {
+    margin: 0 0.5rem;
 }
 
 /*プライバシーポリシー*/
