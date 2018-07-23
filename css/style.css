@@ -7,7 +7,7 @@ body {
     background-color: #fefefe;
 }
 
-.profile__h1,
+.profile__h1--pc,
 .skill__h1,
 .works__h1,
 .contact__h1 {
@@ -139,6 +139,11 @@ nav {
 .profile__name--me {
     font-size: 2rem;
     margin: 1.5rem 0;
+}
+
+
+.profile__h1--mb {
+    display: none;
 }
 
 .profile__img--me {
@@ -502,6 +507,42 @@ textarea {
         height: 80%;
     }
 
+    /*mbプロフィール*/
+    #profile {
+        width: 100vw;
+        height: 80vh;
+        padding: 10vh 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .profile__h1--pc {
+        display: none;
+    }
+    .profile__h1--mb {
+        display: block;
+        font-size: 3rem;
+    }
+    .profile__name--me {
+        font-size: 1.75rem;
+        margin: 0 0 0.5rem 0;
+    }
+    .profile__all--layout {
+        width: 80%;
+    }
+    .profile__img--me {
+        width: 100%;
+    }
+    .profile__img--me img {
+        width: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    .profile__text--me {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+    }
 
     /*mbお問い合わせ*/
     form {
