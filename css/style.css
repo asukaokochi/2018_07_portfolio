@@ -37,6 +37,7 @@ a:hover {
     color: #f28d8d;
     -webkit-transition: 0.25s;
     transition: 0.25s;
+    cursor: pointer;
 }
 
 /*ナビ*/
@@ -97,28 +98,6 @@ nav {
     height: 30%;
 }
 
-.fa-chevron-down {
-    color: #232323;
-    font-size: 3rem;
-    font-weight: lighter;
-}
-
-.firstview__btn--next {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.firstview__btn--next:hover {
-    cursor: pointer;
-    opacity: 0.5;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
 
 /*プロフィール*/
 
@@ -510,6 +489,29 @@ textarea {
         display: none;
     }
 */
+    /*mbファーストビュー*/
+    #firstview {
+        height: 100vh;
+        padding: 0 5%;
+    }
+
+    .firstview__img--logo {
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .firstview__img--logo img {
+        width: 80%;
+        height: 80%;
+    }
+
+
+    /*mbお問い合わせ*/
     .contact__button--sns {
         width: 100%;
     }
