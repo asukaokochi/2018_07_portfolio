@@ -40,6 +40,12 @@ a:hover {
     cursor: pointer;
 }
 
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /*ナビ*/
 
 nav {
@@ -490,19 +496,10 @@ textarea {
     }
 */
     /*mbファーストビュー*/
-    #firstview {
-        height: 100vh;
-        padding: 0 5%;
-    }
+    #firstview {}
 
     .firstview__img--logo {
         margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
     }
 
     .firstview__img--logo img {
