@@ -49,6 +49,7 @@ a:hover {
 /*ナビ*/
 
 nav {
+    z-index: 100;
     position: fixed;
     right: 5%;
     top: 35%;
