@@ -503,7 +503,22 @@ textarea {
 
 
     /*mbお問い合わせ*/
+    form {
+        width: 100%;
+    }
     .contact__button--sns {
         width: 100%;
+    }
+
+    /*mbフッター*/
+    .footer__site--all {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer__site--all a {
+
+        padding: 0.25rem 0;
     }
 }
