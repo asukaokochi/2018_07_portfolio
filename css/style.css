@@ -399,6 +399,7 @@ textarea {
     border-radius: 2px;
     text-align: center;
     border: 2px solid #aaa;
+    background-color: #fefefe;
     color: #999;
     font-family: "QuickSand" !important;
     font-size: 1rem;
