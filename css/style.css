@@ -476,7 +476,7 @@ textarea {
 
 /*モバイル対応*/
 
-@media(max-width:425px) {
+@media screen and (max-width:425px) {
     /*
     nav {
         position: fixed;
@@ -509,7 +509,6 @@ textarea {
 
     /*mbプロフィール*/
     #profile {
-        width: 100vw;
         height: 80vh;
         padding: 10vh 0;
         -webkit-box-orient: vertical;
@@ -526,7 +525,7 @@ textarea {
     }
     .profile__name--me {
         font-size: 1.75rem;
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.75rem 0;
     }
     .profile__all--layout {
         width: 80%;
@@ -540,8 +539,30 @@ textarea {
         margin: 0;
     }
     .profile__text--me {
-        font-size: 0.75rem;
-        line-height: 1.25rem;
+        width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+    }
+
+    /*mb作品*/
+    #works {
+        padding: 0 1rem;
+    }
+    .works__all--layout {
+        width: 80vw;
+        margin: 1rem 1.5rem;
+    }
+    .works__web--layout {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+    .works__web--image img {
+        width: 100%;
     }
 
     /*mbお問い合わせ*/
@@ -560,7 +581,6 @@ textarea {
         flex-direction: column;
     }
     .footer__site--all a {
-
         padding: 0.25rem 0;
     }
 }
