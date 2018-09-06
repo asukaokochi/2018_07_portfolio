@@ -564,6 +564,13 @@ textarea {
     }
     .works__web--image img {
         width: 100%;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+    }
+    .works__web--image img:hover {
+        opacity: 0.8;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
     }
 
     /*mbお問い合わせ*/
